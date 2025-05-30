@@ -48,6 +48,9 @@ steps:
       version: 'latest'
 ```
 
+> [!TIP]
+> The [jobs-nuget-push](https://github.com/codebeltnet/jobs-nuget-push) reusable workflow provides the complete experience for pushing NuGet packages to a feed.
+
 ## Caller workflows to showcase the Codebelt experience
 
 ### Basic CI/CD Pipeline
