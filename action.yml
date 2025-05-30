@@ -1,0 +1,21 @@
+name: Install NuGet CLI from Codebelt
+description: Install a given version of NuGet CLI.
+inputs:
+  token:
+    description: The NuGet API key.
+    required: true
+  version:
+    description: The version of NuGet CLI to install. Default is 6.14.0.
+    required: false
+    default: '6.14.0'
+runs:
+  using: composite
+  steps:
+    - name: Install NuGet CLI
+      uses: nuget/setup-nuget@v2
+      with:
+        nuget-version: ${{ inputs.version }}
+        nuget-api-key: ${{ inputs.token }}
+branding:
+  icon: 'umbrella'
+  color: 'blue'
