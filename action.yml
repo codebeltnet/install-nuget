@@ -12,7 +12,7 @@ runs:
   using: composite
   steps:
     - name: Install NuGet CLI
-      uses: nuget/setup-nuget@v2
+      uses: nuget/setup-nuget@v4
       with:
         nuget-version: ${{ inputs.version }}
         nuget-api-key: ${{ inputs.token }}
